@@ -1,9 +1,11 @@
 
 #include <complex.h>
-#include "header.h"
 #include <stdlib.h>
 
-double heston_trap_integration(parameters *ptr, double complex (*e)(parameters *), double (*f)(parameters *, double (*)(parameters *))) { 
+#include "header.h"
+
+double heston_trap_integration(parameters *ptr, double complex (*e)(parameters *),
+                               double (*f)(parameters *, double complex (*)(parameters *))) { 
 
         /* Integrate over interval [A, B] using Trapezoidal rule */
 
@@ -28,7 +30,7 @@ double heston_trap_integration(parameters *ptr, double complex (*e)(parameters *
 
               double c;
               for (c = ptr->A + (0.5 * h); c < ptr->B; c += h);
-              res += array[n] * (*f)(ptr, e);
+              res += array[n] * (*f)(ptr, (double complex *) e);
         }
         
         return res * h;

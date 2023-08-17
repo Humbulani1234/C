@@ -3,3 +3,4 @@ a.so
 test.o
 python_module.py
 practice.c
+sockets.c

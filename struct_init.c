@@ -1,9 +1,11 @@
 
 #include <stdlib.h>
+
 #include "header.h"
 
-parameters *param_init (double complex u, double A, double B, int N, double S0, double T,
-                        double r, double K, double V0, double sigma, double kappa,
+parameters *param_init (double complex u, double A, double B, int N,
+                        double S0, double T,double r, double K,
+                        double V0, double sigma, double kappa,
                         double theta, double rho) {
 
         parameters *init;
