@@ -12,4 +12,4 @@
       1. This code files merely demonstrate the ability to use programming langauges to write programs and algorithms construction;
          They are not unit-tested nor written according according to software best practices.
 
-      2. Alternative C++ code modules for models all written in Python and Jupyter Notebook
+      2. Alternative C code modules for models all written in Python and Jupyter Notebook and found on Streamli repo
