@@ -1,7 +1,7 @@
 ***DESIGN PATTERN AND PROGRAMMING PARADIGM***
 
     1. Design Pattern - the Python file have a corresponding Jupyter Notebook file and Python files, the files has been
-                        divided into separate c++ modules.
+                        divided into separate c modules.
     
     2. Software Paradigm - a Functional programming paradigm has been adopted
     
